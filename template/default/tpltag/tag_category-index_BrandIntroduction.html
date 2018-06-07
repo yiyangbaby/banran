@@ -1,0 +1,8 @@
+{loop plugins::categoryinfo($_catid) $cat}
+
+<img alt="{$c['catname']}" class="img-responsive " src="{$cat['image']}" onerror='this.src="{config::get('onerror_pic')}"' />
+
+
+{$cat['categorycontent']}
+
+{/loop}
